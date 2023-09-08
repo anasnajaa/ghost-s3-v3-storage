@@ -1,0 +1,32 @@
+{
+	"name": "ghost-s3-v3-storage",
+	"version": "0.0.1",
+	"description": "Store Ghost's media at AWS S3 storage using SDK version 3. Tested and working for Ghost version v5.61.3",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/anasnajaa/ghost-s3-v3-storage.git"
+	},
+	"keywords": [
+		"ghost",
+		"aws",
+		"amazon",
+		"s3",
+		"storage",
+		"plugin",
+		"blog"
+	],
+	"author": "Anas Najaa <anas@najaa.org> (https://anas.najaa.org/)",
+	"license": "MIT",
+	"homepage": "https://github.com/anasnajaa/ghost-s3-v3-storage",
+	"dependencies": {
+		"@aws-sdk/client-s3": "^3.408.0",
+		"@aws-sdk/lib-storage": "^3.408.0",
+		"ghost-storage-base": "^1.0.0",
+		"isomorphic-fetch": "^3.0.0",
+		"uuid": "^9.0.0"
+	}
+}
