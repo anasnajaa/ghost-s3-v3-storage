@@ -1,4 +1,4 @@
-Store Ghost's media at AWS S3 storage using SDK version 3.
+Store [Ghost's](https://ghost.org/) media at AWS S3 storage using [AWS SDK version 3](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/).
 Tested and working for Ghost version v5.61.3
 
 # Ghost S3 V3 Storage
