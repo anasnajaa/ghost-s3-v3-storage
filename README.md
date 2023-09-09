@@ -1,9 +1,8 @@
-Store [Ghost's](https://ghost.org/) media at AWS S3 storage using [AWS SDK version 3](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/).
-Tested and working for Ghost version v5.61.3
-
 # Ghost S3 V3 Storage
 
-This module allows you to store media file at Amazon S3 instead of using local server storage.
+Store [Ghost's](https://ghost.org/) media at AWS S3 storage using [AWS SDK version 3](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/).
+
+Tested for Ghost version v5.61.3
 
 ## Installation
 
