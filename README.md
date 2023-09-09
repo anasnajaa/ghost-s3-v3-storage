@@ -74,6 +74,12 @@ Add `storage` block to `config.production.json` and include your AWS S3 configur
     systemctl restart ghost.service
     ```
 
+    or
+
+    ```
+    ghost restart
+    ```
+
 ## Copyright & License
 
 Copyright (c) 2023 Anas Najaa <anas@najaa.org>
