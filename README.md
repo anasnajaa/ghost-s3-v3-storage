@@ -9,10 +9,30 @@ This module allows you to store media file at Amazon S3 instead of using local s
 
 ### Via Git
 
--   Clone this repo to `/content/adapters/storage`.
+-   Login to Ghost server.
 
     ```
-    cd [path/to/ghost]/content/adapters/storage
+    ssh user@server
+    ```
+
+-   Navigate to Ghost root directory.
+
+    ```
+    cd [path/to/ghost]
+    ```
+
+-   Create the following directory inside Ghost root directory `/content/adapters/storage`.
+
+    ```
+    cd /content
+    mkdir adapters
+    cd adapters
+    mkdir storage
+    ```
+
+-   Clone this repo inside storage directory.
+
+    ```
     git clone https://github.com/anasnajaa/ghost-s3-v3-storage.git
     ```
 
@@ -20,22 +40,40 @@ This module allows you to store media file at Amazon S3 instead of using local s
 
     ```
     cd ghost-s3-v3-storage
-    npm install
+    npm i
     ```
 
 ## Configuration
 
-Add `storage` block to file `config.production.json` and include your AWS S3 configurations:
+-   Switch back to ghost root dir.
+
+    ```
+    cd [path/to/ghost]
+    ```
+
+-   Edit config.production.json
+
+    ```
+    nano config.production.json
+    ```
+
+Add `storage` block to `config.production.json` and include your AWS S3 configurations:
 
     "storage": {
-        "active": '',
+        "active": "ghost-s3-v3-storage",
         "ghost-s3-v3-storage": {
-            "awsAccessKeyId": '',
-            "awsSecretAccessKey": '',
-            "awsS3Region": '',
-            "awsS3Bucket": ''
+            "awsAccessKeyId": "",
+            "awsSecretAccessKey": "",
+            "awsS3Region": "",
+            "awsS3Bucket": "
         }
     },
+
+-   Save and restart Ghost service.
+
+    ```
+    systemctl restart ghost.service
+    ```
 
 ## Copyright & License
 
