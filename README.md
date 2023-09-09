@@ -65,7 +65,7 @@ Add `storage` block to `config.production.json` and include your AWS S3 configur
             "awsAccessKeyId": "",
             "awsSecretAccessKey": "",
             "awsS3Region": "",
-            "awsS3Bucket": "
+            "awsS3Bucket": ""
         }
     },
 
